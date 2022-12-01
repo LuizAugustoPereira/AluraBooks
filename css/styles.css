@@ -7,6 +7,8 @@
     --fonte-secundaria: 'Josefin Sans';
     --azul: #002F52;
     --preto: #000;
+    --cinza: #474646;
+    --cinza-claro: #858585;
 }
 
 body {
@@ -308,6 +310,10 @@ body {
     display: none;
 }
 
+.lista-rodape {
+    display: none;
+}
+
 /* media queries */
 
 @media screen and (min-width: 1024px) {
@@ -433,5 +439,44 @@ body {
 
     .contato__titulo {
         font-size: 24px;
+    }
+
+    /* rodapé */
+    .rodape {
+        display: flex;
+        justify-content: space-around;
+        padding: 1.5em 0;
+    }
+
+    .lista-rodape__item {
+        display: flex;
+        align-items: center;
+        gap: .5em;
+        padding: .6em 0;
+    }
+
+    .lista-rodape {
+        display: block;
+    }
+
+    .rodape__texto {
+        padding: .5em 0;
+        font-size: 24px;
+        font-weight: 400;
+        margin: 1em 0;
+    }
+
+    .lista-rodape__titulo {
+        font-size: 14px;
+        color: var(--cinza-claro);
+        text-transform: uppercase;
+        margin: 2em 0;
+    }
+
+    .lista-rodape__link {
+        text-decoration: none;
+        font-size: 14px;
+        color: var(--cinza);
+        font-weight: 400;
     }
 }
